@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" id="Definitions_1xodn66" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_13nychf" name="First Decision">
+    <extensionElements>
+      <biodi:bounds x="200" y="200" width="180" height="80" />
+    </extensionElements>
+    <decisionTable id="decisionTable_1">
+      <input id="input_1">
+        <inputExpression id="inputExpression_1" typeRef="double">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="input_2">
+        <inputExpression id="inputExpression_2" typeRef="double">
+          <text>test</text>
+        </inputExpression>
+      </input>
+      <output id="output_1" name="outname" typeRef="string" />
+      <rule id="DecisionRule_1mwzsd5">
+        <inputEntry id="UnaryTests_0muowue">
+          <text>&lt;= 2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1q6p9ff">
+          <text>5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0rd9bvc">
+          <text>"Jedan"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gdt7ry">
+        <inputEntry id="UnaryTests_1ssf471">
+          <text>&gt; 6</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yolq4p">
+          <text>&lt;= 2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05xplos">
+          <text>"Dva"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1uhces4">
+        <inputEntry id="UnaryTests_01yatq2">
+          <text>]5..10]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yarna1">
+          <text>]30..110[</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1webpns">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1vr0oab">
+        <inputEntry id="UnaryTests_0iewqyl">
+          <text>&gt;3</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fo6xng">
+          <text>&lt;55</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0dvoa4n">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05nz4os">
+        <inputEntry id="UnaryTests_0pulef9">
+          <text>&lt;4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1w9ddso">
+          <text>&lt;124</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0znvrcg">
+          <text>"Jedan"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
